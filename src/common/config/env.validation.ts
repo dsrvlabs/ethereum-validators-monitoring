@@ -158,7 +158,7 @@ export class EnvironmentVariables {
   public CL_API_GET_BLOCK_INFO_MAX_RETRIES = 1;
 
   @IsNumber()
-  @Min(74240) // Altair
+  @Min(2) // Altair
   @Transform(({ value }) => parseInt(value, 10), { toClassOnly: true })
   public START_EPOCH = 155000;
 
